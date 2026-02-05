@@ -232,18 +232,15 @@ function ExperienceCard({ isActive, onHover }) {
               EXPERIENCE
             </h3>
             <div className="text-center mb-3">
-              <p className="text-white font-semibold text-sm">
+              <p className="text-white font-semibold text-md">
                 Frontend Developer
               </p>
-              <p className="text-[#00d9ff] text-xs">2022 - Present</p>
+              <p className="text-[#00d9ff] text-sm">2022 - Present</p>
             </div>
             <div className="space-y-1">
-              <p className="text-white/70 text-md">• Web Applications</p>
-              <p className="text-white/70 text-md">• E-commerce</p>
-              <p className="text-white/70 text-md">• 3D Experiences</p>
-            </div>
-            <div className="mt-auto">
-              <p className="text-[#a855f7] text-xs text-center"></p>
+              <p className="text-white/70 text-xs">• Web Applications</p>
+              <p className="text-white/70 text-xs">• E-commerce</p>
+              <p className="text-white/70 text-xs">• 3D Experiences</p>
             </div>
           </div>
 
