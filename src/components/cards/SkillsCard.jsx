@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function SkillsCard({ isActive, onHover }) {
   const [isFlipped, setIsFlipped] = useState(false);
 

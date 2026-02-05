@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function ExperienceCard({ isActive, onHover }) {
   const [isFlipped, setIsFlipped] = useState(false);
 

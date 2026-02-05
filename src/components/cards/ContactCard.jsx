@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function ContactCard({ isActive, onHover }) {
