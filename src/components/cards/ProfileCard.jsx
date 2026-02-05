@@ -26,7 +26,7 @@ export default function ProfileCard({ isActive, onHover }) {
             <div className="flex flex-col items-center h-full">
               <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#00d9ff] to-[#0099cc] flex items-center justify-center mb-4 border-2 border-[#00d9ff]">
                 <img
-                  src="/src/assets/profile.jpg"
+                  src="/assets/profile.jpg"
                   alt="Profile"
                   className="rounded-full object-cover"
                 />
