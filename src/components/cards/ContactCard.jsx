@@ -22,7 +22,7 @@ export default function ContactCard({ isActive, onHover }) {
           }`}
         >
           {/* Front */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl border border-[#ff6b6b]/30 p-6 backface-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl border border-[#ff6b6b]/50 p-6 backface-hidden">
             <h3 className="text-xl md:text-2xl font-bold text-[#ff6b6b] text-center mb-4">
               CONNECT
             </h3>
@@ -69,7 +69,7 @@ export default function ContactCard({ isActive, onHover }) {
           </div>
 
           {/* Back */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#2d1b4e] rounded-2xl border border-[#4ecdc4]/30 p-6 backface-hidden rotate-y-180">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#2d1b4e] rounded-2xl border border-[#4ecdc4]/50 p-6 backface-hidden rotate-y-180">
             <h3 className="text-xl md:text-2xl font-bold text-[#4ecdc4] text-center mb-4">
               LET'S WORK
             </h3>

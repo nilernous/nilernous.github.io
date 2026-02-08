@@ -21,7 +21,7 @@ export default function ExperienceCard({ isActive, onHover }) {
           }`}
         >
           {/* Front */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl border border-[#a855f7]/30 p-6 backface-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-2xl border border-[#a855f7]/50 p-6 backface-hidden">
             <h3 className="text-xl md:text-2xl font-bold text-[#a855f7] text-center mb-4">
               EXPERIENCE
             </h3>
@@ -39,7 +39,7 @@ export default function ExperienceCard({ isActive, onHover }) {
           </div>
 
           {/* Back */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2d1b4e] to-[#1a1a2e] rounded-2xl border border-[#a855f7]/30 p-6 backface-hidden rotate-y-180">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2d1b4e] to-[#1a1a2e] rounded-2xl border border-[#a855f7]/50 p-6 backface-hidden rotate-y-180">
             <h3 className="text-xl md:text-2xl font-bold text-[#a855f7] text-center mb-4">
               PROJECTS
             </h3>
