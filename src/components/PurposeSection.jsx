@@ -3,20 +3,20 @@ import { Target, CheckCircle2, ShieldCheck, BookOpen, Flame, Compass } from "luc
 export default function PurposeSection() {
   const goals = [
     {
-      title: "Chuyên sâu Security & Best Practices",
-      desc: "Nghiên cứu kiến trúc bảo mật ứng dụng web, phòng chống OWASP Top 10 và tối ưu hóa hệ thống.",
+      title: "Security & Best Practices Focus",
+      desc: "Researching web application security architecture, OWASP Top 10 mitigation, and system hardening.",
       status: "In Progress",
       icon: <ShieldCheck className="w-5 h-5 text-emerald-500" />,
     },
     {
-      title: "Mentorship & Cống hiến cộng đồng",
-      desc: "Chia sẻ kiến thức lập trình, viết bài hướng dẫn kỹ thuật và hỗ trợ các lập trình viên mới.",
+      title: "Mentorship & Community Contribution",
+      desc: "Sharing technical knowledge, authoring engineering guides, and supporting aspiring software developers.",
       status: "Active",
       icon: <BookOpen className="w-5 h-5 text-sky-500" />,
     },
     {
-      title: "Hệ thống Web Hiệu Năng Cao",
-      desc: "Xây dựng microservices tốc độ cao với Golang / Node.js và tối ưu hóa trải nghiệm Frontend mượt mà.",
+      title: "High-Performance Fullstack Systems",
+      desc: "Architecting fast microservices with NestJS, ExpressJS, ASP.NET, Golang, and Node.js with smooth frontend interfaces.",
       status: "Planned",
       icon: <Flame className="w-5 h-5 text-amber-500" />,
     },
@@ -33,10 +33,10 @@ export default function PurposeSection() {
             <span>Mission & Future Goals</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Sứ Mệnh & <span className="bg-gradient-to-r from-purple-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">Mục Tiêu Phát Triển</span>
+            Mission & <span className="bg-gradient-to-r from-purple-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent">Growth Objectives</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Định hướng phát triển dài hạn trong sự nghiệp công nghệ thông tin.
+            Long-term direction and objectives in software engineering.
           </p>
         </div>
 
@@ -49,13 +49,13 @@ export default function PurposeSection() {
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-extrabold text-slate-900">
-                Sứ mệnh cá nhân
+                Personal Mission
               </h3>
               <blockquote className="text-slate-700 italic text-base sm:text-lg leading-relaxed border-l-4 border-indigo-500 pl-4 py-1">
                 "To be a full-stack performance-driven developer who continuously learns and contributes to the tech community."
               </blockquote>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Hành trình lập trình là không ngừng tự hoàn thiện, chinh phục các bài toán khó và mang lại giải pháp công nghệ giá trị cho người dùng cuối.
+                Software development is a journey of continuous self-improvement, solving complex engineering challenges, and delivering high-value technology solutions to end users.
               </p>
             </div>
 

@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
 
             <p className="text-slate-600 text-sm leading-relaxed max-w-sm">
-              Xây dựng giao diện công nghệ hiện đại, sáng đẹp và tối ưu hiệu năng cho người dùng toàn cầu.
+              Building modern, elegant, and high-performance web applications for users worldwide.
             </p>
 
             <div className="flex items-center gap-3 pt-2">
@@ -80,14 +80,14 @@ export default function Footer() {
 
           {/* Quick Navigation */}
           <div className="md:col-span-4 space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Danh mục</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Navigation</h4>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              <a href="#hero" className="text-slate-600 hover:text-sky-600 transition-colors">Trang chủ</a>
-              <a href="#about" className="text-slate-600 hover:text-sky-600 transition-colors">Về tôi</a>
-              <a href="#skills" className="text-slate-600 hover:text-sky-600 transition-colors">Kỹ năng</a>
-              <a href="#projects" className="text-slate-600 hover:text-sky-600 transition-colors">Dự án</a>
-              <a href="#purpose" className="text-slate-600 hover:text-sky-600 transition-colors">Mục tiêu</a>
-              <a href="#contact" className="text-slate-600 hover:text-sky-600 transition-colors">Liên hệ</a>
+              <a href="#hero" className="text-slate-600 hover:text-sky-600 transition-colors">Home</a>
+              <a href="#about" className="text-slate-600 hover:text-sky-600 transition-colors">About</a>
+              <a href="#skills" className="text-slate-600 hover:text-sky-600 transition-colors">Skills</a>
+              <a href="#projects" className="text-slate-600 hover:text-sky-600 transition-colors">Projects</a>
+              <a href="#purpose" className="text-slate-600 hover:text-sky-600 transition-colors">Goals</a>
+              <a href="#contact" className="text-slate-600 hover:text-sky-600 transition-colors">Contact</a>
             </div>
           </div>
 
@@ -119,7 +119,7 @@ export default function Footer() {
             onClick={scrollToTop}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors font-semibold"
           >
-            <span>Về đầu trang</span>
+            <span>Back to Top</span>
             <ArrowUp className="w-4 h-4" />
           </button>
         </div>

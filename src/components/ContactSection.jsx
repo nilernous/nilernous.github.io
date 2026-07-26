@@ -9,7 +9,7 @@ export default function ContactSection() {
   const contactItems = [
     {
       icon: <Mail className="w-5 h-5 text-sky-500" />,
-      label: "Email Trực Tiếp",
+      label: "Direct Email",
       value: "phuctdm.dev@gmail.com",
       href: "mailto:phuctdm.dev@gmail.com",
       copyable: true,
@@ -63,10 +63,10 @@ export default function ContactSection() {
             <span>Get In Touch</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Liên Hệ & <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-emerald-600 bg-clip-text text-transparent">Hợp Tác Phát Triển</span>
+            Contact & <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-emerald-600 bg-clip-text text-transparent">Collaboration</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Sẵn sàng trao đổi về cơ hội việc làm, dự án mới hoặc các ý tưởng công nghệ.
+            Open for career opportunities, new projects, or technical collaboration.
           </p>
         </div>
 
@@ -77,9 +77,9 @@ export default function ContactSection() {
             <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl bg-white/90 space-y-6">
               
               <div className="space-y-2">
-                <h3 className="text-xl font-bold text-slate-900">Kênh kết nối chính thức</h3>
+                <h3 className="text-xl font-bold text-slate-900">Official Contact Channels</h3>
                 <p className="text-xs sm:text-sm text-slate-500">
-                  Bạn có thể liên hệ trực tiếp qua Email hoặc các mạng xã hội bên dưới:
+                  Feel free to reach out directly via email or connect on social platforms below:
                 </p>
               </div>
 
@@ -110,7 +110,7 @@ export default function ContactSection() {
                       <button
                         onClick={() => handleCopy(item.value, idx)}
                         className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 hover:text-sky-600 hover:bg-slate-50 transition-all shrink-0 ml-2"
-                        title="Sao chép Email"
+                        title="Copy Email"
                       >
                         {copiedIndex === idx ? (
                           <Check className="w-4 h-4 text-emerald-600" />
@@ -126,9 +126,9 @@ export default function ContactSection() {
               <div className="p-4 rounded-2xl bg-gradient-to-r from-sky-500/10 to-indigo-500/10 border border-sky-200 text-xs text-slate-600 space-y-1">
                 <p className="font-bold text-sky-900 flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-sky-600" />
-                  Phản hồi nhanh chóng
+                  Fast Response
                 </p>
-                <p>Mình thường kiểm tra và phản hồi tin nhắn trong vòng 24 giờ làm việc.</p>
+                <p>I typically review and respond to messages within 24 business hours.</p>
               </div>
 
             </div>
@@ -138,35 +138,35 @@ export default function ContactSection() {
           <div className="lg:col-span-7">
             <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl bg-white/90">
               
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Gửi tin nhắn trực tiếp</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">Send a Direct Message</h3>
 
               {sentSuccess ? (
                 <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3 animate-in zoom-in-95 duration-200">
                   <div className="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center mx-auto shadow-md">
                     <Check className="w-6 h-6" />
                   </div>
-                  <h4 className="text-lg font-bold text-emerald-900">Gửi tin nhắn thành công!</h4>
+                  <h4 className="text-lg font-bold text-emerald-900">Message Sent Successfully!</h4>
                   <p className="text-xs sm:text-sm text-emerald-700">
-                    Cảm ơn bạn đã liên hệ. Nilernous sẽ hồi đáp bạn trong thời gian sớm nhất.
+                    Thank you for reaching out! Nilernous will respond to you shortly.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-700">Họ và Tên</label>
+                      <label className="text-xs font-bold text-slate-700">Full Name</label>
                       <input
                         type="text"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Ví dụ: Nguyễn Văn A"
+                        placeholder="e.g. John Doe"
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all"
                       />
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="text-xs font-bold text-slate-700">Địa chỉ Email</label>
+                      <label className="text-xs font-bold text-slate-700">Email Address</label>
                       <input
                         type="email"
                         required
@@ -179,13 +179,13 @@ export default function ContactSection() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-slate-700">Nội dung tin nhắn</label>
+                    <label className="text-xs font-bold text-slate-700">Message Content</label>
                     <textarea
                       required
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Nhập nội dung trao đổi hoặc đề xuất dự án..."
+                      placeholder="Enter your message or project proposal..."
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all resize-none"
                     />
                   </div>
@@ -194,7 +194,7 @@ export default function ContactSection() {
                     type="submit"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 hover:from-sky-600 hover:to-purple-700 shadow-md shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all"
                   >
-                    <span>Gửi Tin Nhắn</span>
+                    <span>Send Message</span>
                     <Send className="w-4 h-4" />
                   </button>
                 </form>

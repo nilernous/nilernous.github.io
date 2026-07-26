@@ -5,9 +5,11 @@ export default function HeroSection() {
     { name: "ReactJS", color: "from-cyan-500/10 to-sky-500/10 text-sky-700 border-sky-200" },
     { name: "Next.js", color: "from-slate-900/5 to-slate-800/10 text-slate-800 border-slate-300" },
     { name: "TypeScript", color: "from-blue-500/10 to-indigo-500/10 text-blue-700 border-blue-200" },
-    { name: "Node.js", color: "from-emerald-500/10 to-green-500/10 text-emerald-700 border-emerald-200" },
-    { name: "Python", color: "from-amber-500/10 to-yellow-500/10 text-amber-700 border-amber-200" },
-    { name: "Three.js", color: "from-purple-500/10 to-indigo-500/10 text-purple-700 border-purple-200" },
+    { name: "ExpressJS", color: "from-emerald-500/10 to-green-500/10 text-emerald-700 border-emerald-200" },
+    { name: "NestJS", color: "from-rose-500/10 to-pink-500/10 text-rose-700 border-rose-200" },
+    { name: "ASP.NET", color: "from-purple-500/10 to-indigo-500/10 text-purple-700 border-purple-200" },
+    { name: "Node.js", color: "from-teal-500/10 to-emerald-500/10 text-teal-700 border-teal-200" },
+    { name: "Three.js", color: "from-amber-500/10 to-orange-500/10 text-amber-700 border-amber-200" },
   ];
 
   return (
@@ -25,20 +27,19 @@ export default function HeroSection() {
             {/* Tech Tagline Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-slate-200 shadow-sm text-slate-700 text-xs sm:text-sm font-semibold backdrop-blur-md">
               <Sparkles className="w-4 h-4 text-sky-500 animate-pulse" />
-              <span>Giao Diện Sáng • Công Nghệ Hiện Đại • Hiệu Năng Cao</span>
+              <span>Modern UI • Cutting-Edge Tech • High Performance</span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-                Sáng tạo sản phẩm{" "}
+                Crafting Exceptional{" "}
                 <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  Công Nghệ & Web
-                </span>{" "}
-                đỉnh cao
+                  Tech & Web Solutions
+                </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
-                Xin chào, mình là <span className="font-semibold text-slate-900">Nilernous</span> — Developer với niềm đam mê biến những ý tưởng phức tạp thành trải nghiệm số hiện đại, sáng đẹp và tối ưu hiệu năng.
+                Hi, I'm <span className="font-semibold text-slate-900">Nilernous</span> — a Fullstack Developer passionate about transforming complex ideas into modern, elegant, and performance-optimized digital experiences.
               </p>
             </div>
 
@@ -60,7 +61,7 @@ export default function HeroSection() {
                 href="#projects"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 hover:from-sky-600 hover:to-purple-700 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-200"
               >
-                <span>Khám phá dự án</span>
+                <span>Explore Projects</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
 
@@ -69,7 +70,7 @@ export default function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-700 bg-white/90 border border-slate-200/90 shadow-md hover:bg-slate-50 hover:border-slate-300 hover:-translate-y-0.5 transition-all duration-200"
               >
                 <Terminal className="w-5 h-5 text-indigo-600" />
-                <span>Tìm hiểu về Nilernous</span>
+                <span>About Nilernous</span>
               </a>
             </div>
 
@@ -77,15 +78,15 @@ export default function HeroSection() {
             <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/70 max-w-lg mx-auto lg:mx-0">
               <div className="space-y-0.5 text-center lg:text-left">
                 <p className="text-2xl sm:text-3xl font-extrabold text-slate-900">2022+</p>
-                <p className="text-xs text-slate-500 font-medium">Bắt đầu Dev</p>
+                <p className="text-xs text-slate-500 font-medium">Started Coding</p>
               </div>
               <div className="space-y-0.5 text-center lg:text-left">
                 <p className="text-2xl sm:text-3xl font-extrabold text-sky-600">100%</p>
-                <p className="text-xs text-slate-500 font-medium">Tâm huyết & Đam mê</p>
+                <p className="text-xs text-slate-500 font-medium">Commitment & Passion</p>
               </div>
               <div className="space-y-0.5 text-center lg:text-left">
                 <p className="text-2xl sm:text-3xl font-extrabold text-indigo-600">Fullstack</p>
-                <p className="text-xs text-slate-500 font-medium">Đa dạng Công nghệ</p>
+                <p className="text-xs text-slate-500 font-medium">Tech Versatility</p>
               </div>
             </div>
 
@@ -132,7 +133,7 @@ export default function HeroSection() {
 
                   <div>
                     <h3 className="text-2xl font-extrabold text-slate-900">Nilernous</h3>
-                    <p className="text-sm font-semibold text-sky-600">Frontend / Software Developer</p>
+                    <p className="text-sm font-semibold text-sky-600">Fullstack Software Developer</p>
                   </div>
 
                   {/* Quote badge */}
@@ -153,7 +154,7 @@ export default function HeroSection() {
                       <Layers className="w-4 h-4 text-indigo-500" />
                       <div>
                         <p className="text-[10px] text-slate-400 uppercase font-bold">Focus</p>
-                        <p className="text-xs font-semibold text-slate-800">UI/UX & Web Apps</p>
+                        <p className="text-xs font-semibold text-slate-800">Fullstack Web Apps</p>
                       </div>
                     </div>
                   </div>

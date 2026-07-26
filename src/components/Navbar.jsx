@@ -18,12 +18,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Trang chủ", href: "#hero" },
-    { name: "Về tôi", href: "#about" },
-    { name: "Kỹ năng", href: "#skills" },
-    { name: "Dự án", href: "#projects" },
-    { name: "Mục tiêu", href: "#purpose" },
-    { name: "Liên hệ", href: "#contact" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Goals", href: "#purpose" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Navbar() {
                 Nilernous
               </span>
               <span className="text-[10px] font-semibold text-sky-600 tracking-widest uppercase">
-                Software Engineer
+                Fullstack Engineer
               </span>
             </div>
           </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 hover:from-sky-600 hover:to-purple-700 shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/35 hover:-translate-y-0.5 transition-all duration-200"
             >
               <Send className="w-4 h-4" />
-              <span>Kết nối ngay</span>
+              <span>Get in Touch</span>
             </a>
           </div>
 
@@ -126,7 +126,7 @@ export default function Navbar() {
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-sky-500 to-indigo-600 shadow-md shadow-indigo-500/20"
             >
               <Send className="w-4 h-4" />
-              <span>Kết nối ngay</span>
+              <span>Get in Touch</span>
             </a>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function ProfileCard({ isActive, onHover }) {
                 Nilernous
               </ShimmerTitle>
               <p className="text-white/80 text-sm md:text-md text-center">
-                Frontend Developer
+                Fullstack Developer
               </p>
               <p className="text-white/80 text-xs md:text-sm text-center mt-4 italic">
                 Code is my art, and the web is my canvas.
@@ -59,7 +59,7 @@ export default function ProfileCard({ isActive, onHover }) {
                 A developer passionate about coding with modern technologies.
               </p>
               <div className="mt-auto text-center">
-                <p className="text-[#ff6b6b] text-sm">Frontend Developer</p>
+                <p className="text-[#ff6b6b] text-sm">Fullstack Developer</p>
                 <p className="text-white/50 text-xs mt-1">2022 - Present</p>
               </div>
             </div>

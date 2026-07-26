@@ -5,7 +5,7 @@ export default function SkillsSection() {
   const [filter, setFilter] = useState("all");
 
   const skillCategories = [
-    { id: "all", label: "Tất cả kỹ năng" },
+    { id: "all", label: "All Skills" },
     { id: "frontend", label: "Frontend", icon: <Code className="w-4 h-4" /> },
     { id: "backend", label: "Backend", icon: <Server className="w-4 h-4" /> },
     { id: "app", label: "Application", icon: <Smartphone className="w-4 h-4" /> },
@@ -14,27 +14,29 @@ export default function SkillsSection() {
 
   const skillsData = [
     // Frontend
-    { name: "ReactJS", category: "frontend", level: "Senior / High", desc: "Xây dựng Component hiện đại, State Management, Custom Hooks", color: "sky", percent: 90 },
-    { name: "Next.js", category: "frontend", level: "Advanced", desc: "App Router, SSR, SSG, Tối ưu SEO & Performance", color: "indigo", percent: 85 },
-    { name: "TypeScript", category: "frontend", level: "Advanced", desc: "Strict Type Safety, Generic Interfaces, Clean Architecture", color: "blue", percent: 85 },
-    { name: "TailwindCSS & CSS3", category: "frontend", level: "Expert", desc: "Glassmorphic Design, Micro-animations, Responsive Layouts", color: "cyan", percent: 95 },
-    { name: "Three.js / React Three Fiber", category: "frontend", level: "Intermediate", desc: "3D Canvas, Galaxy Effects, Shader Basics, Interactive Scenes", color: "purple", percent: 75 },
+    { name: "ReactJS", category: "frontend", level: "Senior / High", desc: "Modern component architecture, state management, custom hooks", color: "sky", percent: 85 },
+    { name: "Next.js", category: "frontend", level: "Advanced", desc: "App Router, SSR, SSG, SEO & performance optimization", color: "indigo", percent: 80 },
+    { name: "TypeScript", category: "frontend", level: "Advanced", desc: "Strict type safety, generic interfaces, clean architecture", color: "blue", percent: 85 },
+    { name: "TailwindCSS & CSS3", category: "frontend", level: "Expert", desc: "Glassmorphic design, micro-animations, responsive layouts", color: "cyan", percent: 90 },
+    { name: "Three.js / React Three Fiber", category: "frontend", level: "Intermediate", desc: "3D Canvas, particle systems, shader basics, interactive scenes", color: "purple", percent: 70 },
 
     // Backend
-    { name: "Node.js & Express", category: "backend", level: "Advanced", desc: "RESTful APIs, Authentication, Middleware, Event Loops", color: "emerald", percent: 80 },
-    { name: "Python", category: "backend", level: "Intermediate", desc: "Data Processing, Scripting, Backend Services", color: "amber", percent: 75 },
-    { name: "Golang", category: "backend", level: "Intermediate", desc: "Concurrency, Fast Microservices, Clean Syntax", color: "sky", percent: 70 },
-    { name: "SQL & Databases", category: "backend", level: "Intermediate", desc: "Relational Queries, Schema Design, Data Indexing", color: "blue", percent: 75 },
+    { name: "ExpressJS & Node.js", category: "backend", level: "Advanced", desc: "RESTful APIs, MVC pattern, middleware pipelines, event-driven architecture", color: "emerald", percent: 85 },
+    { name: "NestJS", category: "backend", level: "Advanced", desc: "TypeScript-first backend, Dependency Injection, Modular architecture, Microservices", color: "rose", percent: 80 },
+    { name: "ASP.NET Core", category: "backend", level: "Advanced", desc: "C#, Enterprise Web APIs, Entity Framework Core, High-performance services", color: "purple", percent: 70 },
+    { name: "Python", category: "backend", level: "Advanced", desc: "Data processing, scripting, automation, backend services", color: "amber", percent: 85 },
+    { name: "Golang", category: "backend", level: "Intermediate", desc: "Concurrency, high-throughput microservices, clean syntax", color: "sky", percent: 60 },
+    { name: "SQL & Databases", category: "backend", level: "Advanced", desc: "Relational queries, schema design, index optimization, PostgreSQL / SQL Server", color: "blue", percent: 80 },
 
     // Application
-    { name: "Java", category: "app", level: "Intermediate", desc: "Object-Oriented Programming, Core Algorithms", color: "rose", percent: 75 },
-    { name: "Kivy (Python GUI)", category: "app", level: "Intermediate", desc: "Cross-platform Desktop & Mobile Interfaces", color: "emerald", percent: 70 },
+    { name: "Java", category: "app", level: "Intermediate", desc: "Object-oriented design, core algorithms, data structures", color: "rose", percent: 75 },
+    { name: "Kivy (Python GUI)", category: "app", level: "Intermediate", desc: "Cross-platform desktop & mobile graphical user interfaces", color: "emerald", percent: 70 },
 
     // Soft Skills
-    { name: "Problem Solving", category: "soft", level: "Core Ability", desc: "Phân tích nguyên nhân gốc rễ, đưa ra giải pháp kỹ thuật tối ưu", color: "indigo", percent: 90 },
-    { name: "Collaboration", category: "soft", level: "Core Ability", desc: "Làm việc nhóm hiệu quả, Git Workflow, Code Review", color: "sky", percent: 90 },
-    { name: "Communication", category: "soft", level: "Core Ability", desc: "Trao đổi rõ ràng, truyền đạt ý tưởng kỹ thuật minh bạch", color: "emerald", percent: 85 },
-    { name: "Adaptability", category: "soft", level: "Core Ability", desc: "Tự học nhanh chóng công nghệ mới và linh hoạt thích ứng", color: "purple", percent: 95 },
+    { name: "Problem Solving", category: "soft", level: "Core Ability", desc: "Root cause analysis, engineering problem solving, optimal technical solutions", color: "indigo", percent: 90 },
+    { name: "Collaboration", category: "soft", level: "Core Ability", desc: "Agile teamwork, Git workflow, code reviews, pair programming", color: "sky", percent: 90 },
+    { name: "Communication", category: "soft", level: "Core Ability", desc: "Clear technical communication, documentation, transparent idea sharing", color: "emerald", percent: 85 },
+    { name: "Adaptability", category: "soft", level: "Core Ability", desc: "Rapid self-learning of emerging technologies and agile adaptability", color: "purple", percent: 95 },
   ];
 
   const filteredSkills = filter === "all" 
@@ -57,10 +59,10 @@ export default function SkillsSection() {
             <span>Tech Stack & Capabilities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Ma trận <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Kỹ Năng Công Nghệ</span>
+            Technical <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Skill Matrix</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Trang bị đa dạng công nghệ hiện đại từ Frontend, Backend đến kỹ năng mềm cốt lõi.
+            Comprehensive proficiency spanning Fullstack development, modern backend frameworks, and core engineering skills.
           </p>
         </div>
 
@@ -106,7 +108,7 @@ export default function SkillsSection() {
               {/* Skill meter bar */}
               <div className="space-y-1.5 pt-2 border-t border-slate-100">
                 <div className="flex justify-between items-center text-xs text-slate-500 font-semibold">
-                  <span>Khả năng ứng dụng</span>
+                  <span>Proficiency</span>
                   <span className="text-sky-600">{skill.percent}%</span>
                 </div>
                 <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden">

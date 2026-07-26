@@ -1,83 +1,49 @@
 import { useState } from "react";
-import { FolderGit2, ExternalLink, Github, Sparkles, Layers, Eye } from "lucide-react";
+import { FolderGit2, ExternalLink, Github, Sparkles, Eye } from "lucide-react";
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = [
-    { id: "all", label: "Tất cả dự án" },
-    { id: "webapp", label: "Web Applications" },
+    { id: "all", label: "All Projects" },
+    { id: "event_and_media", label: "Event & Media" },
     { id: "ecommerce", label: "E-Commerce" },
-    { id: "dashboard", label: "Dashboard" },
-    { id: "3d", label: "3D & Interactive" },
   ];
 
   const projects = [
     {
       id: 1,
-      title: "Interactive 3D Glass Portfolio",
-      category: "3d",
-      description: "Trang thông tin cá nhân hiện đại kết hợp Three.js 3D Canvas, particle matrix và hiệu ứng Glassmorphism siêu mượt.",
-      tags: ["ReactJS", "Three.js", "TailwindCSS", "Framer Motion"],
+      title: "Modern Omni E-Commerce Platform",
+      category: "ecommerce",
+      description: "OmniCommerce is a modern cloud-native enterprise e-commerce platform designed to support multiple client applications through a unified backend ecosystem.",
+      tags: ["ReactJS", "NestJS", "Next.js", "TypeScript", "Microfrontend", "Microservice", "Flutter"],
       featured: true,
-      github: "https://github.com/nilernous/nilernous.github.io",
-      demo: "https://nilernous.github.io",
-      gradient: "from-sky-400 via-indigo-500 to-purple-600",
+      github: "https://github.com/nilernous/omni-ecommerce-platform",
+      demo: "#",
+      gradient: "from-indigo-500 via-purple-500 to-pink-500",
       highlights: [
-        "Interactive 3D particle Canvas phản hồi theo di chuyển chuột",
-        "Giao diện sáng công nghệ (Modern Light Tech) chuẩn UX/UI",
-        "Tương thích hoàn hảo Responsive 100% trên Mobile & Desktop",
+        "Ultra-fast product search and filtering with debounce",
+        "Online payment & smart order management",
+        "Modern user interface optimized for customer conversion",
       ]
     },
     {
       id: 2,
-      title: "Modern E-Commerce Web Application",
-      category: "ecommerce",
-      description: "Ứng dụng thương mại điện tử mượt mà với giỏ hàng realtime, lọc sản phẩm thông minh và giao diện mua sắm tối ưu.",
-      tags: ["ReactJS", "Next.js", "TailwindCSS", "Node.js"],
-      featured: true,
-      github: "https://github.com/nilernous",
-      demo: "#",
-      gradient: "from-indigo-500 via-purple-500 to-pink-500",
-      highlights: [
-        "Tìm kiếm và lọc sản phẩm tốc độ cực nhanh với debounce",
-        "Thanh toán trực tuyến & quản lý đơn hàng thông minh",
-        "Giao diện hiện đại tối ưu hóa trải nghiệm khách hàng",
-      ]
-    },
-    {
-      id: 3,
-      title: "Real-time High-Tech Analytics Dashboard",
-      category: "dashboard",
-      description: "Bảng điều khiển phân tích dữ liệu trực quan thời gian thực cho doanh nghiệp với biểu đồ tương tác và thống kê chỉ số.",
-      tags: ["ReactJS", "TypeScript", "Chart.js", "TailwindCSS"],
+      title: "Event Management System",
+      category: "event_and_media",
+      description: "Real-time interactive data analytics dashboard for enterprise performance metrics and visualization.",
+      tags: ["ReactJS", "NestJS", "TypeScript", "Recharts"],
       featured: false,
       github: "https://github.com/nilernous",
-      demo: "#",
+      demo: "https://framesx.id.vn",
       gradient: "from-cyan-500 via-blue-600 to-indigo-600",
       highlights: [
-        "Biểu đồ phân tích realtime sống động",
-        "Quản lý phân quyền người dùng và chỉ số KPIs",
-        "Dark / Light theme linh hoạt với hiệu ứng công nghệ",
+        "Vibrant realtime analytics charts",
+        "User role permission management and event tracking",
+        "Flexible VI / EN languagues with I18N",
       ]
-    },
-    {
-      id: 4,
-      title: "Fullstack SaaS Management Platform",
-      category: "webapp",
-      description: "Nền tảng quản lý quy trình làm việc và dự án tích hợp hệ thống xác thực người dùng bảo mật và quản lý tài nguyên.",
-      tags: ["Next.js", "TypeScript", "Node.js", "SQL"],
-      featured: false,
-      github: "https://github.com/nilernous",
-      demo: "#",
-      gradient: "from-emerald-400 via-teal-500 to-sky-600",
-      highlights: [
-        "Xác thực JWT & OAuth2 bảo mật cao",
-        "Tối ưu hóa thời gian phản hồi API dưới 50ms",
-        "Hỗ trợ phân tích báo cáo dữ liệu định kỳ",
-      ]
-    },
+    }
   ];
 
   const filteredProjects = activeCategory === "all"
@@ -95,10 +61,10 @@ export default function ProjectsSection() {
             <span>Featured Portfolio</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Sản Phẩm & <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Dự Án Nổi Bật</span>
+            Featured <span className="bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Products & Projects</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Các dự án được thực hiện với tiêu chuẩn cao về giao diện, mã nguồn và trải nghiệm người dùng.
+            Projects crafted with high standards in interface design, clean codebase, and exceptional user experience.
           </p>
         </div>
 
@@ -175,7 +141,7 @@ export default function ProjectsSection() {
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-sky-600 hover:text-sky-700 transition-colors"
                   >
                     <Eye className="w-4 h-4" />
-                    <span>Xem chi tiết</span>
+                    <span>View Details</span>
                   </button>
 
                   <div className="flex items-center gap-2">
@@ -229,7 +195,7 @@ export default function ProjectsSection() {
             </p>
 
             <div className="space-y-3">
-              <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Điểm nổi bật kỹ thuật</h4>
+              <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Technical Highlights</h4>
               <ul className="space-y-2">
                 {selectedProject.highlights.map((h, i) => (
                   <li key={i} className="flex items-start gap-2 text-xs text-slate-600">
@@ -245,7 +211,7 @@ export default function ProjectsSection() {
                 onClick={() => setSelectedProject(null)}
                 className="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200"
               >
-                Đóng
+                Close
               </button>
               <a
                 href={selectedProject.github}

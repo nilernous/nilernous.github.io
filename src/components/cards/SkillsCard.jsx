@@ -35,7 +35,7 @@ export default function SkillsCard({ isActive, onHover }) {
               <div>
                 <p className="text-[#00d9ff] text-lg font-semibold">Backend</p>
                 <p className="text-white/70 text-sm mt-1">
-                  Node.js • Python • Java • Golang • SQL
+                  ExpressJS • NestJS • ASP.NET Core • Node.js • Python • Golang • SQL
                 </p>
               </div>
               <div>
