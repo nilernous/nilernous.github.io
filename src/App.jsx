@@ -1,34 +1,34 @@
-import { Canvas } from "@react-three/fiber";
-import GalaxyBackground from "./components/GalaxyBackground";
-import Planets from "./components/Planets";
-import PlanetaryBelt from "./components/PlanetaryBelt";
-import Carousel from "./components/Carousel";
+import TechCanvas from "./components/TechCanvas";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import SkillsSection from "./components/SkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import PurposeSection from "./components/PurposeSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-gradient-to-br from-[#0f0f23] via-[#0a0a1a] to-[#0a0a1a]">
-      {/* 3D Galaxy Background */}
-      <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 6, 10], fov: 50 }}>
-          <GalaxyBackground starCount={2000} />
-          <PlanetaryBelt count={800} innerRadius={6} outerRadius={7} />
-          <Planets />
-          <ambientLight intensity={0.4} />
-          <pointLight position={[10, 10, 10]} intensity={1} color="#ffffff" />
-          <pointLight
-            position={[-10, -10, -10]}
-            intensity={0.6}
-            color="#00d9ff"
-          />
-          <pointLight position={[0, 5, 5]} intensity={0.8} color="#ff6b6b" />
-          <spotLight position={[0, 10, 0]} intensity={0.5} color="#4ecdc4" />
-        </Canvas>
-      </div>
+    <div className="relative min-h-screen bg-slate-50 text-slate-900 selection:bg-sky-500 selection:text-white font-sans antialiased tech-grid-bg">
+      {/* Background Interactive Tech Particle Network */}
+      <TechCanvas />
 
-      {/* Content Overlay */}
-      <div className="w-full h-full relative z-10 flex flex-col items-center justify-center min-h-screen">
-        <Carousel />
-      </div>
+      {/* Main Glassmorphic Header */}
+      <Navbar />
+
+      {/* Main Content Sections */}
+      <main className="relative z-10 space-y-4">
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <PurposeSection />
+        <ContactSection />
+      </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
