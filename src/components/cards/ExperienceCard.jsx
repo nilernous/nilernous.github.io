@@ -27,7 +27,7 @@ export default function ExperienceCard({ isActive, onHover }) {
             </h3>
             <div className="text-center mb-3">
               <p className="text-white font-semibold text-md">
-                Frontend Developer
+                Fullstack Developer
               </p>
               <p className="text-[#00d9ff] text-sm">2022 - Present</p>
             </div>
