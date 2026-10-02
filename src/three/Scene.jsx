@@ -1,5 +1,5 @@
-import GalaxyBackground from './GalaxyBackground'
-import Carousel from './Carousel'
+import GalaxyBackground from './objects/GalaxyBackground'
+import Carousel from './carousel/Carousel'
 
 export default function Scene() {
   return (
