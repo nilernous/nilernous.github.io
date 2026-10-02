@@ -1,55 +1,9 @@
-import { motion } from "framer-motion";
 import { useState, useRef, useEffect, useCallback } from "react";
 import ProfileCard from "./cards/ProfileCard";
 import SkillsCard from "./cards/SkillsCard";
 import PurposeCard from "./cards/PurposeCard";
 import ExperienceCard from "./cards/ExperienceCard";
 import ContactCard from "./cards/ContactCard";
-
-// Shimmer Title Component
-function ShimmerTitle({ children, className, color = "#00d9ff" }) {
-  return (
-    <motion.h2
-      className={`${className} relative inline-block`}
-      initial={{ opacity: 0.8 }}
-      animate={{
-        opacity: [0.8, 1, 0.8],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-      style={{ color }}
-    >
-      {children}
-    </motion.h2>
-  );
-}
-
-// Shimmer Subtitle Component for h3
-function ShimmerSubtitle({ children, className, color = "#4ecdc4" }) {
-  return (
-    <motion.h3
-      className={className}
-      initial={{ opacity: 0.8 }}
-      animate={{
-        opacity: [0.8, 1, 0.8],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-      style={{ color }}
-    >
-      {children}
-    </motion.h3>
-  );
-}
-
-// Export shimmer components for use in cards
-export { ShimmerTitle, ShimmerSubtitle };
 
 // Circular Carousel with hover pause and swipe support
 export default function Carousel() {

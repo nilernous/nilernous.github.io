@@ -1,12 +1,12 @@
-import TechCanvas from "./components/TechCanvas";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
-import PurposeSection from "./components/PurposeSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import TechCanvas from "./components/backgrounds/TechCanvas";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import HeroSection from "./sections/hero/HeroSection";
+import AboutSection from "./sections/about/AboutSection";
+import SkillsSection from "./sections/skills/SkillsSection";
+import ProjectsSection from "./sections/projects/ProjectsSection";
+import PurposeSection from "./sections/purpose/PurposeSection";
+import ContactSection from "./sections/contact/ContactSection";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       {/* Main Glassmorphic Header */}
       <Navbar />
 
-      {/* Main Content Sections */}
+      {/* Main Content Sections: order must match src/data/navigation.js */}
       <main className="relative z-10 space-y-4">
         <HeroSection />
         <AboutSection />
